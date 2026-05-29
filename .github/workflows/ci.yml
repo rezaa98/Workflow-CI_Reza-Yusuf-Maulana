@@ -1,0 +1,55 @@
+name: ML Workflow CI
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  workflow_dispatch:
+
+jobs:
+  train-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install MLflow
+      run: pip install mlflow==2.19.0
+
+    - name: Run MLProject
+      id: run_mlflow
+      run: |
+        cd MLProject
+        mlflow run . --no-conda
+        # Find the run ID
+        RUN_ID=$(ls mlruns/0 | grep -v meta.yaml | head -n 1)
+        echo "RUN_ID=$RUN_ID" >> $GITHUB_ENV
+        echo "Run ID: $RUN_ID"
+
+    - name: Upload Artifact to GitHub
+      uses: actions/upload-artifact@v3
+      with:
+        name: trained-model
+        path: MLProject/mlruns/0/${{ env.RUN_ID }}/artifacts/model
+
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+    - name: Build and Push Docker Image
+      run: |
+        cd MLProject
+        # Build image using mlflow
+        mlflow models build-docker -m mlruns/0/${{ env.RUN_ID }}/artifacts/model -n ${{ secrets.DOCKERHUB_USERNAME }}/ml-model-dicoding:latest
+        
+        # Push the image
+        docker push ${{ secrets.DOCKERHUB_USERNAME }}/ml-model-dicoding:latest
