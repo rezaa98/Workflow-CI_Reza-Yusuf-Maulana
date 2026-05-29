@@ -27,7 +27,7 @@ jobs:
       id: run_mlflow
       run: |
         cd MLProject
-        mlflow run . --no-conda
+        mlflow run . --env-manager=local
         # Find the run ID
         RUN_ID=$(ls mlruns/0 | grep -v meta.yaml | head -n 1)
         echo "RUN_ID=$RUN_ID" >> $GITHUB_ENV
