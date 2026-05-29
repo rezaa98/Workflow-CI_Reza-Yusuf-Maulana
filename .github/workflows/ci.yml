@@ -29,7 +29,7 @@ jobs:
         cd MLProject
         mlflow run . --env-manager=local
         # Find the run ID
-        RUN_ID=$(ls mlruns/0 | grep -v meta.yaml | head -n 1)
+        RUN_ID=$(find mlruns/0 -type d -name "model" | head -n 1 | awk -F'/' '{print $3}')
         echo "RUN_ID=$RUN_ID" >> $GITHUB_ENV
         echo "Run ID: $RUN_ID"
 
