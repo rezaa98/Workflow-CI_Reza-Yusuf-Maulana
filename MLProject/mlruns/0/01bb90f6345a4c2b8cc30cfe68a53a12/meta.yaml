@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/mac-095093/Downloads/Build%20With%20AI%20Project/Workflow-CI/MLProject/mlruns/0/01bb90f6345a4c2b8cc30cfe68a53a12/artifacts
+end_time: 1780556159087
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 01bb90f6345a4c2b8cc30cfe68a53a12
+run_name: mlproject_run
+run_uuid: 01bb90f6345a4c2b8cc30cfe68a53a12
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780556151071
+status: 3
+tags: []
+user_id: mac-095093
