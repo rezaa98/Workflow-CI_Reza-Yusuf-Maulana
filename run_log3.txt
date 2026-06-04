@@ -1,0 +1,560 @@
+train-and-deploy	Set up job	﻿2026-05-29T19:21:48.6929648Z Current runner version: '2.334.0'
+train-and-deploy	Set up job	2026-05-29T19:21:48.6971932Z ##[group]Runner Image Provisioner
+train-and-deploy	Set up job	2026-05-29T19:21:48.6973609Z Hosted Compute Agent
+train-and-deploy	Set up job	2026-05-29T19:21:48.6974616Z Version: 20260520.533
+train-and-deploy	Set up job	2026-05-29T19:21:48.6976068Z Commit: 189110e25284a9812c124fd27b339e2fb4f2f9db
+train-and-deploy	Set up job	2026-05-29T19:21:48.6977281Z Build Date: 2026-05-20T17:44:04Z
+train-and-deploy	Set up job	2026-05-29T19:21:48.6978456Z Worker ID: {ae35e46f-977c-4b49-ac34-7bc3eb33fac9}
+train-and-deploy	Set up job	2026-05-29T19:21:48.6979813Z Azure Region: eastus
+train-and-deploy	Set up job	2026-05-29T19:21:48.6980742Z ##[endgroup]
+train-and-deploy	Set up job	2026-05-29T19:21:48.6982904Z ##[group]Operating System
+train-and-deploy	Set up job	2026-05-29T19:21:48.6983853Z Ubuntu
+train-and-deploy	Set up job	2026-05-29T19:21:48.6984652Z 24.04.4
+train-and-deploy	Set up job	2026-05-29T19:21:48.6985773Z LTS
+train-and-deploy	Set up job	2026-05-29T19:21:48.6986570Z ##[endgroup]
+train-and-deploy	Set up job	2026-05-29T19:21:48.6987588Z ##[group]Runner Image
+train-and-deploy	Set up job	2026-05-29T19:21:48.6988567Z Image: ubuntu-24.04
+train-and-deploy	Set up job	2026-05-29T19:21:48.6989444Z Version: 20260525.161.1
+train-and-deploy	Set up job	2026-05-29T19:21:48.6991431Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260525.161/images/ubuntu/Ubuntu2404-Readme.md
+train-and-deploy	Set up job	2026-05-29T19:21:48.6995010Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260525.161
+train-and-deploy	Set up job	2026-05-29T19:21:48.6997070Z ##[endgroup]
+train-and-deploy	Set up job	2026-05-29T19:21:48.6999093Z ##[group]GITHUB_TOKEN Permissions
+train-and-deploy	Set up job	2026-05-29T19:21:48.7002688Z Contents: read
+train-and-deploy	Set up job	2026-05-29T19:21:48.7003785Z Metadata: read
+train-and-deploy	Set up job	2026-05-29T19:21:48.7004743Z Packages: read
+train-and-deploy	Set up job	2026-05-29T19:21:48.7005942Z ##[endgroup]
+train-and-deploy	Set up job	2026-05-29T19:21:48.7009982Z Secret source: Actions
+train-and-deploy	Set up job	2026-05-29T19:21:48.7011568Z Prepare workflow directory
+train-and-deploy	Set up job	2026-05-29T19:21:48.8449894Z Prepare all required actions
+train-and-deploy	Set up job	2026-05-29T19:21:48.8491411Z Getting action download info
+train-and-deploy	Set up job	2026-05-29T19:21:49.3128424Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+train-and-deploy	Set up job	2026-05-29T19:21:49.4107000Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+train-and-deploy	Set up job	2026-05-29T19:21:49.4914056Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+train-and-deploy	Set up job	2026-05-29T19:21:49.6006587Z Download action repository 'docker/login-action@v3' (SHA:c94ce9fb468520275223c153574b00df6fe4bcc9)
+train-and-deploy	Set up job	2026-05-29T19:21:50.0740257Z Complete job name: train-and-deploy
+train-and-deploy	Checkout repository	﻿2026-05-29T19:21:50.2991672Z ##[group]Run actions/checkout@v4
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.2992746Z with:
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.2993534Z   repository: ***/Workflow-CI_Reza-Yusuf-Maulana
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.2998685Z   token: ***
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.2999192Z   ssh-strict: true
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.2999703Z   ssh-user: git
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.3000204Z   persist-credentials: true
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.3000754Z   clean: true
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.3001253Z   sparse-checkout-cone-mode: true
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.3001859Z   fetch-depth: 1
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.3002367Z   fetch-tags: false
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.3002873Z   show-progress: true
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.3003378Z   lfs: false
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.3003854Z   submodules: false
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.3004360Z   set-safe-directory: true
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.3005151Z ##[endgroup]
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4197418Z Syncing repository: ***/Workflow-CI_Reza-Yusuf-Maulana
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4200007Z ##[group]Getting Git version info
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4201068Z Working directory is '/home/runner/work/Workflow-CI_Reza-Yusuf-Maulana/Workflow-CI_Reza-Yusuf-Maulana'
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4202530Z [command]/usr/bin/git version
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4267343Z git version 2.54.0
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4283422Z ##[endgroup]
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4302397Z Temporarily overriding HOME='/home/runner/work/_temp/82df5a79-6f45-49f5-8caa-1e0c7e8d2c35' before making global git config changes
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4305071Z Adding repository directory to the temporary git global config as a safe directory
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4319993Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Workflow-CI_Reza-Yusuf-Maulana/Workflow-CI_Reza-Yusuf-Maulana
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4374150Z Deleting the contents of '/home/runner/work/Workflow-CI_Reza-Yusuf-Maulana/Workflow-CI_Reza-Yusuf-Maulana'
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4377669Z ##[group]Initializing the repository
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4384929Z [command]/usr/bin/git init /home/runner/work/Workflow-CI_Reza-Yusuf-Maulana/Workflow-CI_Reza-Yusuf-Maulana
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4471101Z hint: Using 'master' as the name for the initial branch. This default branch name
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4473399Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4475725Z hint: to use in all of your new repositories, which will suppress this warning,
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4477201Z hint: call:
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4478061Z hint:
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4478822Z hint: 	git config --global init.defaultBranch <name>
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4479794Z hint:
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4480949Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4482736Z hint: 'development'. The just-created branch can be renamed via this command:
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4484227Z hint:
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4503161Z hint: 	git branch -m <name>
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4504167Z hint:
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4505699Z hint: Disable this message with "git config set advice.defaultBranchName false"
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4507811Z Initialized empty Git repository in /home/runner/work/Workflow-CI_Reza-Yusuf-Maulana/Workflow-CI_Reza-Yusuf-Maulana/.git/
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4510576Z [command]/usr/bin/git remote add origin https://github.com/***/Workflow-CI_Reza-Yusuf-Maulana
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4537499Z ##[endgroup]
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4538431Z ##[group]Disabling automatic garbage collection
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4543618Z [command]/usr/bin/git config --local gc.auto 0
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4580149Z ##[endgroup]
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4581130Z ##[group]Setting up auth
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4588625Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.4628767Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.5004280Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.5039563Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.5295974Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.5338706Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.5619187Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.5660130Z ##[endgroup]
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.5661401Z ##[group]Fetching the repository
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.5668961Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +acbf6c097d5dfc427beece98ad36947f027e8582:refs/remotes/origin/master
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.8697481Z From https://github.com/***/Workflow-CI_Reza-Yusuf-Maulana
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.8699479Z  * [new ref]         acbf6c097d5dfc427beece98ad36947f027e8582 -> origin/master
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.8741249Z ##[endgroup]
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.8742201Z ##[group]Determining the checkout info
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.8743588Z ##[endgroup]
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.8749885Z [command]/usr/bin/git sparse-checkout disable
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.8802413Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.8835516Z ##[group]Checking out the ref
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.8844732Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.9059395Z Reset branch 'master'
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.9060437Z branch 'master' set up to track 'origin/master'.
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.9069769Z ##[endgroup]
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.9122878Z [command]/usr/bin/git log -1 --format=%H
+train-and-deploy	Checkout repository	2026-05-29T19:21:50.9155630Z acbf6c097d5dfc427beece98ad36947f027e8582
+train-and-deploy	Set up Python	﻿2026-05-29T19:21:51.0110261Z ##[group]Run actions/setup-python@v5
+train-and-deploy	Set up Python	2026-05-29T19:21:51.0110962Z with:
+train-and-deploy	Set up Python	2026-05-29T19:21:51.0111397Z   python-version: 3.10
+train-and-deploy	Set up Python	2026-05-29T19:21:51.0111903Z   check-latest: false
+train-and-deploy	Set up Python	2026-05-29T19:21:51.0117787Z   token: ***
+train-and-deploy	Set up Python	2026-05-29T19:21:51.0118255Z   update-environment: true
+train-and-deploy	Set up Python	2026-05-29T19:21:51.0118811Z   allow-prereleases: false
+train-and-deploy	Set up Python	2026-05-29T19:21:51.0119345Z   freethreaded: false
+train-and-deploy	Set up Python	2026-05-29T19:21:51.0119849Z ##[endgroup]
+train-and-deploy	Set up Python	2026-05-29T19:21:51.1950310Z ##[group]Installed versions
+train-and-deploy	Set up Python	2026-05-29T19:21:51.2051218Z Successfully set up CPython (3.10.20)
+train-and-deploy	Set up Python	2026-05-29T19:21:51.2053573Z ##[endgroup]
+train-and-deploy	Install MLflow	﻿2026-05-29T19:21:51.2495813Z ##[group]Run pip install "mlflow>=2.22.0"
+train-and-deploy	Install MLflow	2026-05-29T19:21:51.2497406Z [36;1mpip install "mlflow>=2.22.0"[0m
+train-and-deploy	Install MLflow	2026-05-29T19:21:51.2547008Z shell: /usr/bin/bash -e {0}
+train-and-deploy	Install MLflow	2026-05-29T19:21:51.2548181Z env:
+train-and-deploy	Install MLflow	2026-05-29T19:21:51.2549305Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Install MLflow	2026-05-29T19:21:51.2551297Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+train-and-deploy	Install MLflow	2026-05-29T19:21:51.2553317Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Install MLflow	2026-05-29T19:21:51.2555061Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Install MLflow	2026-05-29T19:21:51.2557009Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Install MLflow	2026-05-29T19:21:51.2558811Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+train-and-deploy	Install MLflow	2026-05-29T19:21:51.2560327Z ##[endgroup]
+train-and-deploy	Install MLflow	2026-05-29T19:21:52.1470092Z Collecting mlflow>=2.22.0
+train-and-deploy	Install MLflow	2026-05-29T19:21:52.2062936Z   Downloading mlflow-3.12.0-py3-none-any.whl.metadata (49 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:52.2604765Z Collecting mlflow-skinny==3.12.0 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:52.2650793Z   Downloading mlflow_skinny-3.12.0-py3-none-any.whl.metadata (50 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:52.2949369Z Collecting mlflow-tracing==3.12.0 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:52.2992786Z   Downloading mlflow_tracing-3.12.0-py3-none-any.whl.metadata (19 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:52.3198504Z Collecting Flask-CORS<7 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:52.3245660Z   Downloading flask_cors-6.0.2-py3-none-any.whl.metadata (5.3 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:52.3441203Z Collecting Flask<4 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:52.3486248Z   Downloading flask-3.1.3-py3-none-any.whl.metadata (3.2 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:52.9852974Z Collecting aiohttp<4 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:52.9908617Z   Downloading aiohttp-3.13.5-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.0218181Z Collecting alembic!=1.10.0,<2 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.0269820Z   Downloading alembic-1.18.4-py3-none-any.whl.metadata (7.2 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.2246696Z Collecting cryptography<47,>=43.0.0 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.2290915Z   Downloading cryptography-46.0.7-cp38-abi3-manylinux_2_34_x86_64.whl.metadata (5.7 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.2531387Z Collecting docker<8,>=4.0.0 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.2578037Z   Downloading docker-7.1.0-py3-none-any.whl.metadata (3.8 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.2794125Z Collecting graphene<4 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.2835647Z   Downloading graphene-3.4.3-py2.py3-none-any.whl.metadata (6.9 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.3068171Z Collecting gunicorn<26 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.3116567Z   Downloading gunicorn-25.3.0-py3-none-any.whl.metadata (5.5 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.3295510Z Collecting huey<3,>=2.5.4 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.3338620Z   Downloading huey-2.6.0-py3-none-any.whl.metadata (4.3 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.5190959Z Collecting matplotlib<4 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.5241290Z   Downloading matplotlib-3.10.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (52 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.7418253Z Collecting numpy<3 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.7466499Z   Downloading numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.8746271Z Collecting pandas<3 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:53.8791329Z   Downloading pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.0410390Z Collecting pyarrow<24,>=4.0.0 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.0455693Z   Downloading pyarrow-23.0.1-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (3.1 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.1386146Z Collecting scikit-learn<2 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.1431415Z   Downloading scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.2924134Z Collecting scipy<2 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.2970140Z   Downloading scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.3182502Z Collecting skops<1 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.3221900Z   Downloading skops-0.14.0-py3-none-any.whl.metadata (4.4 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.6771097Z Collecting sqlalchemy<3,>=1.4.0 (from mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.6823273Z   Downloading sqlalchemy-2.0.50-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.7218123Z Collecting cachetools<8,>=5.0.0 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.7267566Z   Downloading cachetools-7.1.4-py3-none-any.whl.metadata (5.5 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.7471858Z Collecting click<9,>=7.0 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.7527552Z   Downloading click-8.4.1-py3-none-any.whl.metadata (2.6 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.7714093Z Collecting cloudpickle<4 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.7763597Z   Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.8068195Z Collecting databricks-sdk<1,>=0.20.0 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.8116259Z   Downloading databricks_sdk-0.112.0-py3-none-any.whl.metadata (43 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.8726813Z Collecting fastapi<1 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.8773807Z   Downloading fastapi-0.136.3-py3-none-any.whl.metadata (27 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.9047464Z Collecting gitpython<4,>=3.1.9 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.9107047Z   Downloading gitpython-3.1.50-py3-none-any.whl.metadata (14 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.9439777Z Collecting importlib_metadata!=4.7.0,<10,>=3.7.0 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.9493316Z   Downloading importlib_metadata-9.0.0-py3-none-any.whl.metadata (4.5 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.9746883Z Collecting opentelemetry-api<3,>=1.9.0 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:54.9789989Z   Downloading opentelemetry_api-1.42.1-py3-none-any.whl.metadata (1.4 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.0012102Z Collecting opentelemetry-proto<3,>=1.9.0 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.0058212Z   Downloading opentelemetry_proto-1.42.1-py3-none-any.whl.metadata (2.3 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.0294521Z Collecting opentelemetry-sdk<3,>=1.9.0 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.0337406Z   Downloading opentelemetry_sdk-1.42.1-py3-none-any.whl.metadata (1.7 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.0525196Z Collecting packaging<27 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.0569190Z   Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.3061135Z Collecting protobuf<8,>=3.12.0 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.3136914Z   Downloading protobuf-7.35.0-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.4371438Z Collecting pydantic<3,>=2.0.0 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.4457042Z   Downloading pydantic-2.13.4-py3-none-any.whl.metadata (109 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.4664971Z Collecting python-dotenv<2,>=0.19.0 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.4720545Z   Downloading python_dotenv-1.2.2-py3-none-any.whl.metadata (27 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.5312958Z Collecting pyyaml<7,>=5.1 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.5363528Z   Downloading pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.5663336Z Collecting requests<3,>=2.17.3 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.5854527Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.6016842Z Collecting sqlparse<1,>=0.4.0 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.6068446Z   Downloading sqlparse-0.5.5-py3-none-any.whl.metadata (4.7 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.6392480Z Collecting starlette<1 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.6437795Z   Downloading starlette-0.52.1-py3-none-any.whl.metadata (6.3 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.6666195Z Collecting typing-extensions<5,>=4.0.0 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.6711091Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.7018033Z Collecting uvicorn<1 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.7062445Z   Downloading uvicorn-0.48.0-py3-none-any.whl.metadata (6.7 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.7277407Z Collecting aiohappyeyeballs>=2.5.0 (from aiohttp<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.7319345Z   Downloading aiohappyeyeballs-2.6.2-py3-none-any.whl.metadata (5.9 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.7447354Z Collecting aiosignal>=1.4.0 (from aiohttp<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.7491586Z   Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.7633811Z Collecting async-timeout<6.0,>=4.0 (from aiohttp<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.7681450Z   Downloading async_timeout-5.0.1-py3-none-any.whl.metadata (5.1 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.7841482Z Collecting attrs>=17.3.0 (from aiohttp<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.7889411Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.8635207Z Collecting frozenlist>=1.1.1 (from aiohttp<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:55.8682764Z   Downloading frozenlist-1.8.0-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (20 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.2010321Z Collecting multidict<7.0,>=4.5 (from aiohttp<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.2072387Z   Downloading multidict-6.7.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.2720456Z Collecting propcache>=0.2.0 (from aiohttp<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.2772798Z   Downloading propcache-0.5.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (16 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.6501195Z Collecting yarl<2.0,>=1.17.0 (from aiohttp<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.6555665Z   Downloading yarl-1.24.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (94 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.6927056Z Collecting Mako (from alembic!=1.10.0,<2->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.6972272Z   Downloading mako-1.3.12-py3-none-any.whl.metadata (2.9 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.7260956Z Collecting tomli (from alembic!=1.10.0,<2->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.7312286Z   Downloading tomli-2.4.1-py3-none-any.whl.metadata (10 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.8413230Z Collecting cffi>=2.0.0 (from cryptography<47,>=43.0.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.8458781Z   Downloading cffi-2.0.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.8915029Z Collecting google-auth~=2.0 (from databricks-sdk<1,>=0.20.0->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.8969118Z   Downloading google_auth-2.53.0-py3-none-any.whl.metadata (5.5 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.9178774Z Collecting protobuf<8,>=3.12.0 (from mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.9224269Z   Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.9513168Z Collecting urllib3>=1.26.0 (from docker<8,>=4.0.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.9557132Z   Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.9820123Z Collecting typing-inspection>=0.4.2 (from fastapi<1->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.9859625Z   Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:56.9972481Z Collecting annotated-doc>=0.0.2 (from fastapi<1->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.0015687Z   Downloading annotated_doc-0.0.4-py3-none-any.whl.metadata (6.6 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.0156724Z Collecting blinker>=1.9.0 (from Flask<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.0200037Z   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.0350065Z Collecting itsdangerous>=2.2.0 (from Flask<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.0396188Z   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.0550038Z Collecting jinja2>=3.1.2 (from Flask<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.0597930Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.1164312Z Collecting markupsafe>=2.1.1 (from Flask<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.1212508Z   Downloading markupsafe-3.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.1432792Z Collecting werkzeug>=3.1.0 (from Flask<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.1483623Z   Downloading werkzeug-3.1.8-py3-none-any.whl.metadata (4.0 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.1735703Z Collecting gitdb<5,>=4.0.1 (from gitpython<4,>=3.1.9->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.1789227Z   Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.2004743Z Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->gitpython<4,>=3.1.9->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.2050278Z   Downloading smmap-5.0.3-py3-none-any.whl.metadata (4.6 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.2277187Z Collecting pyasn1-modules>=0.2.1 (from google-auth~=2.0->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.2323298Z   Downloading pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.2633008Z Collecting graphql-core<3.3,>=3.1 (from graphene<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.2674331Z   Downloading graphql_core-3.2.8-py3-none-any.whl.metadata (11 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.2813068Z Collecting graphql-relay<3.3,>=3.1 (from graphene<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.2857152Z   Downloading graphql_relay-3.2.0-py3-none-any.whl.metadata (12 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.3021195Z Collecting python-dateutil<3,>=2.7.0 (from graphene<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.3064429Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.3366651Z Collecting zipp>=3.20 (from importlib_metadata!=4.7.0,<10,>=3.7.0->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.3410807Z   Downloading zipp-4.1.0-py3-none-any.whl.metadata (3.6 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.4152609Z Collecting contourpy>=1.0.1 (from matplotlib<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.4206150Z   Downloading contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.5 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.4350963Z Collecting cycler>=0.10 (from matplotlib<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.4391766Z   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.7111030Z Collecting fonttools>=4.22.0 (from matplotlib<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.7158015Z   Downloading fonttools-4.63.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (118 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.7972101Z Collecting kiwisolver>=1.3.1 (from matplotlib<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:57.8031012Z   Downloading kiwisolver-1.5.0-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (5.1 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:58.0009511Z Collecting pillow>=8 (from matplotlib<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:58.0055222Z   Downloading pillow-12.2.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:58.0354628Z Collecting pyparsing>=3 (from matplotlib<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:58.0401186Z   Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:58.0843563Z Collecting opentelemetry-semantic-conventions==0.63b1 (from opentelemetry-sdk<3,>=1.9.0->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:58.0892365Z   Downloading opentelemetry_semantic_conventions-0.63b1-py3-none-any.whl.metadata (2.4 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:58.1405938Z Collecting pytz>=2020.1 (from pandas<3->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:58.1452055Z   Downloading pytz-2026.2-py2.py3-none-any.whl.metadata (22 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:58.1623222Z Collecting tzdata>=2022.7 (from pandas<3->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:58.1670499Z   Downloading tzdata-2026.2-py2.py3-none-any.whl.metadata (1.4 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:58.1829503Z Collecting annotated-types>=0.6.0 (from pydantic<3,>=2.0.0->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:58.1877033Z   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.1345857Z Collecting pydantic-core==2.46.4 (from pydantic<3,>=2.0.0->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.1393861Z   Downloading pydantic_core-2.46.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.1611788Z Collecting six>=1.5 (from python-dateutil<3,>=2.7.0->graphene<4->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.1661169Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.2735100Z Collecting charset_normalizer<4,>=2 (from requests<3,>=2.17.3->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.2779737Z   Downloading charset_normalizer-3.4.7-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.2973287Z Collecting idna<4,>=2.5 (from requests<3,>=2.17.3->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.3016217Z   Downloading idna-3.17-py3-none-any.whl.metadata (6.4 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.3260531Z Collecting certifi>=2023.5.7 (from requests<3,>=2.17.3->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.3306503Z   Downloading certifi-2026.5.20-py3-none-any.whl.metadata (2.5 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.3639632Z Collecting joblib>=1.2.0 (from scikit-learn<2->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.3687342Z   Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.3811452Z Collecting threadpoolctl>=3.1.0 (from scikit-learn<2->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.3853542Z   Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.4146838Z Collecting prettytable>=3.9 (from skops<1->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.4190235Z   Downloading prettytable-3.17.0-py3-none-any.whl.metadata (34 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.5936167Z Collecting greenlet>=1 (from sqlalchemy<3,>=1.4.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.5981853Z   Downloading greenlet-3.5.1-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.6235186Z Collecting anyio<5,>=3.6.2 (from starlette<1->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.6282825Z   Downloading anyio-4.13.0-py3-none-any.whl.metadata (4.5 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.6470088Z Collecting exceptiongroup>=1.0.2 (from anyio<5,>=3.6.2->starlette<1->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.6518894Z   Downloading exceptiongroup-1.3.1-py3-none-any.whl.metadata (6.7 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.6710100Z Collecting h11>=0.8 (from uvicorn<1->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.6750182Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.7107433Z Collecting pycparser (from cffi>=2.0.0->cryptography<47,>=43.0.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.7149671Z   Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.7478108Z Collecting wcwidth (from prettytable>=3.9->skops<1->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.7521076Z   Downloading wcwidth-0.7.0-py3-none-any.whl.metadata (36 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.7790896Z Collecting pyasn1<0.7.0,>=0.6.1 (from pyasn1-modules>=0.2.1->google-auth~=2.0->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.12.0->mlflow>=2.22.0)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.7833807Z   Downloading pyasn1-0.6.3-py3-none-any.whl.metadata (8.4 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.8059083Z Downloading mlflow-3.12.0-py3-none-any.whl (10.6 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.8606773Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 208.0 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.8654273Z Downloading mlflow_skinny-3.12.0-py3-none-any.whl (3.3 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.8818357Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 225.6 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.8860855Z Downloading mlflow_tracing-3.12.0-py3-none-any.whl (1.6 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.8956267Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 202.1 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.9000634Z Downloading aiohttp-3.13.5-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.7 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.9102011Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 196.8 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.9143492Z Downloading alembic-1.18.4-py3-none-any.whl (263 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.9211340Z Downloading async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.9272815Z Downloading cachetools-7.1.4-py3-none-any.whl (16 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.9344565Z Downloading click-8.4.1-py3-none-any.whl (116 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.9430502Z Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.9508560Z Downloading cryptography-46.0.7-cp38-abi3-manylinux_2_34_x86_64.whl (4.4 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.9750208Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.4/4.4 MB 258.2 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.9762276Z Downloading databricks_sdk-0.112.0-py3-none-any.whl (901 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.9826959Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 901.4/901.4 kB 171.5 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.9867684Z Downloading docker-7.1.0-py3-none-any.whl (147 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.9929533Z Downloading fastapi-0.136.3-py3-none-any.whl (117 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:21:59.9996216Z Downloading flask-3.1.3-py3-none-any.whl (103 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.0070924Z Downloading flask_cors-6.0.2-py3-none-any.whl (13 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.0206357Z Downloading gitpython-3.1.50-py3-none-any.whl (212 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.0282619Z Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.0366085Z Downloading google_auth-2.53.0-py3-none-any.whl (246 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.0442704Z Downloading graphene-3.4.3-py2.py3-none-any.whl (114 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.0522377Z Downloading graphql_core-3.2.8-py3-none-any.whl (207 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.0606917Z Downloading graphql_relay-3.2.0-py3-none-any.whl (16 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.0676841Z Downloading gunicorn-25.3.0-py3-none-any.whl (208 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.0762495Z Downloading huey-2.6.0-py3-none-any.whl (76 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.0840725Z Downloading importlib_metadata-9.0.0-py3-none-any.whl (27 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.0909816Z Downloading matplotlib-3.10.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.8 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.1234225Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.8/8.8 MB 291.5 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.1282693Z Downloading multidict-6.7.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (243 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.1358370Z Downloading numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.1960039Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.8/16.8 MB 289.3 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.2005485Z Downloading opentelemetry_api-1.42.1-py3-none-any.whl (61 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.2074661Z Downloading opentelemetry_proto-1.42.1-py3-none-any.whl (71 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.2143187Z Downloading opentelemetry_sdk-1.42.1-py3-none-any.whl (170 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.2220003Z Downloading opentelemetry_semantic_conventions-0.63b1-py3-none-any.whl (203 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.2296769Z Downloading packaging-26.2-py3-none-any.whl (100 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.2363257Z Downloading pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.8 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.2804770Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 306.3 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.2854392Z Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.2988483Z Downloading pyarrow-23.0.1-cp310-cp310-manylinux_2_28_x86_64.whl (47.6 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.6467791Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 47.6/47.6 MB 137.3 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.6517525Z Downloading pydantic-2.13.4-py3-none-any.whl (472 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.6592628Z Downloading pydantic_core-2.46.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.6694566Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 247.4 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.6739260Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.6806906Z Downloading python_dotenv-1.2.2-py3-none-any.whl (22 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.6871870Z Downloading pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (770 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.6932833Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.3/770.3 kB 149.5 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.6974758Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.7041633Z Downloading charset_normalizer-3.4.7-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (216 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.7109298Z Downloading idna-3.17-py3-none-any.whl (65 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.7174817Z Downloading scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.7 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.7602349Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 237.2 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.7648881Z Downloading scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.8867875Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.7/37.7 MB 315.9 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.8910930Z Downloading skops-0.14.0-py3-none-any.whl (132 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.8975734Z Downloading smmap-5.0.3-py3-none-any.whl (24 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.9041037Z Downloading sqlalchemy-2.0.50-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.2 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.9172093Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 295.0 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.9216309Z Downloading sqlparse-0.5.5-py3-none-any.whl (46 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.9279535Z Downloading starlette-0.52.1-py3-none-any.whl (74 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.9345731Z Downloading anyio-4.13.0-py3-none-any.whl (114 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.9409863Z Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.9469334Z Downloading urllib3-2.7.0-py3-none-any.whl (131 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.9551166Z Downloading uvicorn-0.48.0-py3-none-any.whl (71 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.9609129Z Downloading yarl-1.24.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (106 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.9682456Z Downloading aiohappyeyeballs-2.6.2-py3-none-any.whl (15 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.9747441Z Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.9809576Z Downloading annotated_doc-0.0.4-py3-none-any.whl (5.3 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.9870627Z Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:00.9946832Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.0010945Z Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.0073085Z Downloading certifi-2026.5.20-py3-none-any.whl (134 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.0144767Z Downloading cffi-2.0.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (216 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.0227644Z Downloading contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (325 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.0355791Z Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.0418620Z Downloading exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.0480772Z Downloading fonttools-4.63.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.9 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.0720093Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 219.1 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.0764961Z Downloading frozenlist-1.8.0-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (219 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.0830663Z Downloading greenlet-3.5.1-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (612 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.0900244Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 612.9/612.9 kB 79.8 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.0947961Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.1009578Z Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.1067614Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.1130241Z Downloading joblib-1.5.3-py3-none-any.whl (309 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.1199397Z Downloading kiwisolver-1.5.0-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.1281596Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 247.6 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.1330199Z Downloading markupsafe-3.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (20 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.1391725Z Downloading pillow-12.2.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.1672999Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 273.1 MB/s  0:00:00
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.1714954Z Downloading prettytable-3.17.0-py3-none-any.whl (34 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.1782893Z Downloading propcache-0.5.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (60 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.1858259Z Downloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.1923486Z Downloading pyasn1-0.6.3-py3-none-any.whl (83 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.1988055Z Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.2051286Z Downloading pytz-2026.2-py2.py3-none-any.whl (510 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.2131424Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.2191388Z Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.2252773Z Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.2314427Z Downloading tzdata-2026.2-py2.py3-none-any.whl (349 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.2382673Z Downloading werkzeug-3.1.8-py3-none-any.whl (226 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.2452922Z Downloading zipp-4.1.0-py3-none-any.whl (10 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.2513041Z Downloading mako-1.3.12-py3-none-any.whl (78 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.2576634Z Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.2637959Z Downloading tomli-2.4.1-py3-none-any.whl (14 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.2693280Z Downloading wcwidth-0.7.0-py3-none-any.whl (110 kB)
+train-and-deploy	Install MLflow	2026-05-29T19:22:01.8503098Z Installing collected packages: pytz, huey, zipp, wcwidth, urllib3, tzdata, typing-extensions, tomli, threadpoolctl, sqlparse, smmap, six, pyyaml, python-dotenv, pyparsing, pycparser, pyasn1, pyarrow, protobuf, propcache, pillow, packaging, numpy, markupsafe, kiwisolver, joblib, itsdangerous, idna, h11, greenlet, graphql-core, frozenlist, fonttools, cycler, cloudpickle, click, charset_normalizer, certifi, cachetools, blinker, attrs, async-timeout, annotated-types, annotated-doc, aiohappyeyeballs, werkzeug, uvicorn, typing-inspection, sqlalchemy, scipy, requests, python-dateutil, pydantic-core, pyasn1-modules, prettytable, opentelemetry-proto, opentelemetry-api, multidict, Mako, jinja2, importlib_metadata, gunicorn, graphql-relay, gitdb, exceptiongroup, contourpy, cffi, aiosignal, yarl, scikit-learn, pydantic, pandas, opentelemetry-semantic-conventions, matplotlib, graphene, gitpython, Flask, docker, cryptography, anyio, alembic, starlette, skops, opentelemetry-sdk, google-auth, Flask-CORS, aiohttp, fastapi, databricks-sdk, mlflow-tracing, mlflow-skinny, mlflow
+train-and-deploy	Install MLflow	2026-05-29T19:22:30.6465590Z 
+train-and-deploy	Install MLflow	2026-05-29T19:22:30.6574890Z Successfully installed Flask-3.1.3 Flask-CORS-6.0.2 Mako-1.3.12 aiohappyeyeballs-2.6.2 aiohttp-3.13.5 aiosignal-1.4.0 alembic-1.18.4 annotated-doc-0.0.4 annotated-types-0.7.0 anyio-4.13.0 async-timeout-5.0.1 attrs-26.1.0 blinker-1.9.0 cachetools-7.1.4 certifi-2026.5.20 cffi-2.0.0 charset_normalizer-3.4.7 click-8.4.1 cloudpickle-3.1.2 contourpy-1.3.2 cryptography-46.0.7 cycler-0.12.1 databricks-sdk-0.112.0 docker-7.1.0 exceptiongroup-1.3.1 fastapi-0.136.3 fonttools-4.63.0 frozenlist-1.8.0 gitdb-4.0.12 gitpython-3.1.50 google-auth-2.53.0 graphene-3.4.3 graphql-core-3.2.8 graphql-relay-3.2.0 greenlet-3.5.1 gunicorn-25.3.0 h11-0.16.0 huey-2.6.0 idna-3.17 importlib_metadata-9.0.0 itsdangerous-2.2.0 jinja2-3.1.6 joblib-1.5.3 kiwisolver-1.5.0 markupsafe-3.0.3 matplotlib-3.10.9 mlflow-3.12.0 mlflow-skinny-3.12.0 mlflow-tracing-3.12.0 multidict-6.7.1 numpy-2.2.6 opentelemetry-api-1.42.1 opentelemetry-proto-1.42.1 opentelemetry-sdk-1.42.1 opentelemetry-semantic-conventions-0.63b1 packaging-26.2 pandas-2.3.3 pillow-12.2.0 prettytable-3.17.0 propcache-0.5.2 protobuf-6.33.6 pyarrow-23.0.1 pyasn1-0.6.3 pyasn1-modules-0.4.2 pycparser-3.0 pydantic-2.13.4 pydantic-core-2.46.4 pyparsing-3.3.2 python-dateutil-2.9.0.post0 python-dotenv-1.2.2 pytz-2026.2 pyyaml-6.0.3 requests-2.34.2 scikit-learn-1.7.2 scipy-1.15.3 six-1.17.0 skops-0.14.0 smmap-5.0.3 sqlalchemy-2.0.50 sqlparse-0.5.5 starlette-0.52.1 threadpoolctl-3.6.0 tomli-2.4.1 typing-extensions-4.15.0 typing-inspection-0.4.2 tzdata-2026.2 urllib3-2.7.0 uvicorn-0.48.0 wcwidth-0.7.0 werkzeug-3.1.8 yarl-1.24.2 zipp-4.1.0
+train-and-deploy	Run MLProject	﻿2026-05-29T19:22:31.3434145Z ##[group]Run cd MLProject
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3434609Z [36;1mcd MLProject[0m
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3434908Z [36;1mmlflow run . --env-manager=local[0m
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3435429Z [36;1m# Find the run ID[0m
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3435887Z [36;1mRUN_ID=$(find mlruns/0 -type d -name "model" | head -n 1 | awk -F'/' '{print $3}')[0m
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3436367Z [36;1mecho "RUN_ID=$RUN_ID" >> $GITHUB_ENV[0m
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3436698Z [36;1mecho "Run ID: $RUN_ID"[0m
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3468350Z shell: /usr/bin/bash -e {0}
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3468659Z env:
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3469002Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3469480Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3469930Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3470344Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3470747Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3471204Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+train-and-deploy	Run MLProject	2026-05-29T19:22:31.3471553Z ##[endgroup]
+train-and-deploy	Run MLProject	2026-05-29T19:22:35.2882099Z 2026/05/29 19:22:35 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+train-and-deploy	Run MLProject	2026-05-29T19:22:35.3017940Z 2026/05/29 19:22:35 INFO mlflow.store.db.utils: Updating database tables
+train-and-deploy	Run MLProject	2026-05-29T19:22:35.9443078Z 2026/05/29 19:22:35 INFO mlflow.projects.utils: === Created directory /tmp/tmpbfckbrzp for downloading remote URIs passed to arguments of type 'path' ===
+train-and-deploy	Run MLProject	2026-05-29T19:22:35.9447284Z 2026/05/29 19:22:35 INFO mlflow.projects.backend.local: === Running command 'python modelling.py --data_path california_housing_preprocessing/california_housing.csv' in run with ID '09e22b3d42dc4de6bfbf08106812d426' === 
+train-and-deploy	Run MLProject	2026-05-29T19:22:44.8614678Z 2026/05/29 19:22:44 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+train-and-deploy	Run MLProject	2026-05-29T19:22:48.5148570Z Loading preprocessed dataset from california_housing_preprocessing/california_housing.csv...
+train-and-deploy	Run MLProject	2026-05-29T19:22:48.5149911Z MSE: 0.2574534902888876
+train-and-deploy	Run MLProject	2026-05-29T19:22:48.5150260Z MAE: 0.33046474210271315
+train-and-deploy	Run MLProject	2026-05-29T19:22:48.5150595Z R2: 0.8035319548600052
+train-and-deploy	Run MLProject	2026-05-29T19:22:49.4055958Z 2026/05/29 19:22:49 INFO mlflow.projects: === Run (ID '09e22b3d42dc4de6bfbf08106812d426') succeeded ===
+train-and-deploy	Run MLProject	2026-05-29T19:22:50.3228097Z Run ID: 
+train-and-deploy	Upload Artifact to GitHub	﻿2026-05-29T19:22:50.3513534Z ##[group]Run actions/upload-artifact@v4
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3513883Z with:
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3514111Z   name: trained-model
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3514380Z   path: MLProject/mlruns/0//artifacts/model
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3514722Z   if-no-files-found: warn
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3514988Z   compression-level: 6
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3515425Z   overwrite: false
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3515672Z   include-hidden-files: false
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3515930Z env:
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3516208Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3516670Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3517114Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3517510Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3517907Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3518317Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3518685Z   RUN_ID: 
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.3518965Z ##[endgroup]
+train-and-deploy	Upload Artifact to GitHub	2026-05-29T19:22:50.5922058Z ##[warning]No files were found with the provided path: MLProject/mlruns/0//artifacts/model. No artifacts will be uploaded.
+train-and-deploy	Log in to Docker Hub	﻿2026-05-29T19:22:50.6239130Z ##[group]Run docker/login-action@v3
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:50.6239485Z with:
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:50.6240463Z   username: ***
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:50.6240780Z   password: ***
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:50.6241040Z   logout: true
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:50.6241279Z env:
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:50.6241571Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:50.6242054Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:50.6242525Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:50.6242972Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:50.6243389Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:50.6243817Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:50.6244160Z   RUN_ID: 
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:50.6244384Z ##[endgroup]
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:50.9565135Z Logging into docker.io...
+train-and-deploy	Log in to Docker Hub	2026-05-29T19:22:51.1278986Z Login Succeeded!
+train-and-deploy	Build and Push Docker Image	﻿2026-05-29T19:22:51.1458003Z ##[group]Run cd MLProject
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1458344Z [36;1mcd MLProject[0m
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1458603Z [36;1m# Build image using mlflow[0m
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1459226Z [36;1mmlflow models build-docker -m mlruns/0//artifacts/model -n ***/ml-model-dicoding:latest[0m
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1459708Z [36;1m[0m
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1459929Z [36;1m# Push the image[0m
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1460254Z [36;1mdocker push ***/ml-model-dicoding:latest[0m
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1489349Z shell: /usr/bin/bash -e {0}
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1489632Z env:
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1489934Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1490415Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1491112Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1491522Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1491931Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1492377Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1492722Z   RUN_ID: 
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:51.1492946Z ##[endgroup]
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4793704Z Traceback (most recent call last):
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4802141Z   File "/opt/hostedtoolcache/Python/3.10.20/x64/bin/mlflow", line 6, in <module>
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4802900Z     sys.exit(cli())
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4803737Z   File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/click/core.py", line 1524, in __call__
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4804594Z     return self.main(*args, **kwargs)
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4805609Z   File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/click/core.py", line 1445, in main
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4806415Z     rv = self.invoke(ctx)
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4807165Z   File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/click/core.py", line 1912, in invoke
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4808056Z     return _process_result(sub_ctx.command.invoke(sub_ctx))
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4808964Z   File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/click/core.py", line 1912, in invoke
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4809823Z     return _process_result(sub_ctx.command.invoke(sub_ctx))
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4836119Z   File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/click/core.py", line 1308, in invoke
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4837049Z     return ctx.invoke(self.callback, **ctx.params)
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4837964Z   File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/click/core.py", line 877, in invoke
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4838760Z     return callback(*args, **kwargs)
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4839657Z   File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/mlflow/models/cli.py", line 317, in build_docker
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4840574Z     python_api.build_docker(**kwargs)
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4841489Z   File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/mlflow/models/python_api.py", line 87, in build_docker
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4842603Z     get_flavor_backend(model_uri, docker_build=True, env_manager=env_manager).build_image(
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4843903Z   File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/mlflow/models/flavor_backend_registry.py", line 45, in get_flavor_backend
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4845094Z     local_path = artifact_repo.download_artifacts(artifact_path, dst_path=tmp.path())
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4846602Z   File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/mlflow/store/artifact/local_artifact_repo.py", line 90, in download_artifacts
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4847785Z     return super().download_artifacts(artifact_path, dst_path)
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4848954Z   File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/mlflow/store/artifact/artifact_repo.py", line 350, in download_artifacts
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4850003Z     raise MlflowException(
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4850898Z mlflow.exceptions.MlflowException: The following failures occurred while downloading one or more artifacts from mlruns/0//artifacts:
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4852378Z ##### File model #####
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:53.4852736Z No such artifact: 'model'
+train-and-deploy	Build and Push Docker Image	2026-05-29T19:22:54.1948182Z ##[error]Process completed with exit code 1.
+train-and-deploy	Post Log in to Docker Hub	﻿2026-05-29T19:22:54.2142132Z Post job cleanup.
+train-and-deploy	Post Log in to Docker Hub	2026-05-29T19:22:54.5393075Z ##[group]Logout from docker.io
+train-and-deploy	Post Log in to Docker Hub	2026-05-29T19:22:54.5439827Z [command]/usr/bin/docker logout docker.io
+train-and-deploy	Post Log in to Docker Hub	2026-05-29T19:22:54.5592161Z Removing login credentials for docker.io
+train-and-deploy	Post Log in to Docker Hub	2026-05-29T19:22:54.5631538Z ##[endgroup]
+train-and-deploy	Post Log in to Docker Hub	2026-05-29T19:22:54.5632096Z ##[group]Post cache
+train-and-deploy	Post Log in to Docker Hub	2026-05-29T19:22:54.5632948Z State not set
+train-and-deploy	Post Log in to Docker Hub	2026-05-29T19:22:54.5633534Z ##[endgroup]
+train-and-deploy	Post Checkout repository	﻿2026-05-29T19:22:54.6168465Z Post job cleanup.
+train-and-deploy	Post Checkout repository	2026-05-29T19:22:54.7241883Z [command]/usr/bin/git version
+train-and-deploy	Post Checkout repository	2026-05-29T19:22:54.7299046Z git version 2.54.0
+train-and-deploy	Post Checkout repository	2026-05-29T19:22:54.7349344Z Temporarily overriding HOME='/home/runner/work/_temp/9572743c-78bb-457e-b1ca-8ad7f22045af' before making global git config changes
+train-and-deploy	Post Checkout repository	2026-05-29T19:22:54.7350523Z Adding repository directory to the temporary git global config as a safe directory
+train-and-deploy	Post Checkout repository	2026-05-29T19:22:54.7357444Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Workflow-CI_Reza-Yusuf-Maulana/Workflow-CI_Reza-Yusuf-Maulana
+train-and-deploy	Post Checkout repository	2026-05-29T19:22:54.7405940Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+train-and-deploy	Post Checkout repository	2026-05-29T19:22:54.7444951Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+train-and-deploy	Post Checkout repository	2026-05-29T19:22:54.7703980Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+train-and-deploy	Post Checkout repository	2026-05-29T19:22:54.7729715Z http.https://github.com/.extraheader
+train-and-deploy	Post Checkout repository	2026-05-29T19:22:54.7744048Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+train-and-deploy	Post Checkout repository	2026-05-29T19:22:54.7780864Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+train-and-deploy	Post Checkout repository	2026-05-29T19:22:54.8043883Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+train-and-deploy	Post Checkout repository	2026-05-29T19:22:54.8084577Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+train-and-deploy	Complete job	﻿2026-05-29T19:22:54.8558642Z Cleaning up orphan processes
+train-and-deploy	Complete job	2026-05-29T19:22:54.8859226Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4, docker/login-action@v3. Actions will be forced to run with Node.js 24 by default starting June 16th, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
