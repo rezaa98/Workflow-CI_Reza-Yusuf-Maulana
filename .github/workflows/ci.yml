@@ -10,6 +10,8 @@ on:
 jobs:
   train-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      MLFLOW_ALLOW_FILE_STORE: "true"
 
     steps:
     - name: Checkout repository
